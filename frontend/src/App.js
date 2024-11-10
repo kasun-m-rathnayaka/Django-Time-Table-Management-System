@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Signin from "./components/Signin";
 
 function App() {
   return (
-    <div className='text-gray-600 text-9xl'>Home</div>
+    <div>
+      <Signin/>
+    </div>
   );
 }
 
