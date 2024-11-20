@@ -37,38 +37,122 @@ const Timetable = () => {
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>Timetable Management</h1>
-      <table style={styles.table}>
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>9:00 - 10:00</th>
-            <th>10:00 - 11:00</th>
-            <th>11:00 - 12:00</th>
-            <th>1:00 - 2:00</th>
-            <th>2:00 - 3:00</th>
-          </tr>
-        </thead>
-        <tbody>
-          {timetable.map((day, dayIndex) => (
-            <tr key={day.day}>
-              <td style={styles.dayColumn}>{day.day}</td>
-              {day.slots.map((slot, slotIndex) => (
-                <td key={slotIndex}>
-                  <input
-                    type="text"
-                    value={slot}
-                    onChange={(e) =>
-                      handleInputChange(dayIndex, slotIndex, e.target.value)
-                    }
-                    placeholder="Subject"
-                    style={styles.input}
-                  />
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div id="webcrumbs">
+        <div className="w-[800px] bg-white rounded-lg shadow-lg p-6">
+          {" "}
+          <div className="grid grid-cols-7 gap-4">
+            <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-full">
+              Monday
+            </div>
+            <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-full">
+              Tuesday
+            </div>
+            <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-full">
+              Wednesday
+            </div>
+            <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-full">
+              Thursday
+            </div>
+            <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-full">
+              Friday
+            </div>
+            <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-full">
+              Saturday
+            </div>
+            <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-full">
+              Sunday
+            </div>
+
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              9:00 AM - 10:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              9:00 AM - 10:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              9:00 AM - 10:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              9:00 AM - 10:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              9:00 AM - 10:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              9:00 AM - 10:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              9:00 AM - 10:00 AM
+            </div>
+
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              10:00 AM - 11:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              10:00 AM - 11:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              10:00 AM - 11:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              10:00 AM - 11:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              10:00 AM - 11:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              10:00 AM - 11:00 AM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              10:00 AM - 11:00 AM
+            </div>
+
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              11:00 AM - 12:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              11:00 AM - 12:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              11:00 AM - 12:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              11:00 AM - 12:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              11:00 AM - 12:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              11:00 AM - 12:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              11:00 AM - 12:00 PM
+            </div>
+
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              12:00 PM - 1:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              12:00 PM - 1:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              12:00 PM - 1:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              12:00 PM - 1:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              12:00 PM - 1:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              12:00 PM - 1:00 PM
+            </div>
+            <div className="text-center p-2 bg-neutral-100 rounded-md">
+              12:00 PM - 1:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
       <button onClick={handleSave} style={styles.button}>
         Save Timetable
       </button>

@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       {/* Main Content */}
-      <div style={styles.mainContent}>
+      <div style={styles.mainContent} className="bg-black">
         <h1 style={styles.mainHeader}>
           Welcome to the Timetable Management System
         </h1>

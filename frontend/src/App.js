@@ -11,12 +11,14 @@ import AddLecture from "./components/userManagement/AddLecture";
 import AddStudent from "./components/userManagement/AddStudent";
 import ViewLecture from "./components/userManagement/ViewLecture";
 import ViewStudent from "./components/userManagement/ViewStudent";
+import Login from "./components/Login";
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/users" element={<Users />} />
         <Route path="/timetable" element={<Timetable />} />
         <Route path="/lectureleave" element={<LectureLeave />} />

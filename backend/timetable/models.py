@@ -1,7 +1,4 @@
 from django.db import models
-
-
-
 class Lecturer(models.Model):
     name = models.CharField(max_length=100)
     position = models.CharField(max_length=50)  # e.g., Lecturer, Assistant Lecturer, etc.
