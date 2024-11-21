@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Administrator Management</h2>
+    <a href="{% url 'administrator_create' %}">Create New Administrator</a>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+        {% for admin in administrators %}
+        <tr>
+            <td>{{ admin.user.username }}</td>
+            <td>{{ admin.role }}</td>
+            <td>
+                <a href="{% url 'administrator_update' admin.pk %}">Edit</a> |
+                <a href="{% url 'administrator_delete' admin.pk %}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
