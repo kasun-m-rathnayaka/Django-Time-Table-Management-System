@@ -13,26 +13,6 @@ const Users = () => {
       <h1>User Management</h1>
       <p>Manage users by category: Admin, Lecturers, and Students.</p>
 
-      {/* Admin Section */}
-      <div style={styles.section}>
-        <h2>Admin</h2>
-        <p>Manage administrative users.</p>
-        <div style={styles.actions}>
-          <button
-            style={styles.button}
-            onClick={() => handleNavigation("/add-admin")}
-          >
-            Add Admin
-          </button>
-          <button
-            style={styles.button}
-            onClick={() => handleNavigation("/view-admins")}
-          >
-            View Admins
-          </button>
-        </div>
-      </div>
-
       {/* Lecturer Section */}
       <div style={styles.section}>
         <h2>Lecturers</h2>
