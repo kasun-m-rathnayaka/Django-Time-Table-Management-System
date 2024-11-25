@@ -2,16 +2,14 @@ import React from "react";
 import TimeTable from "../components/TimeTable";
 import SideBar from "../components/SideBar";
 
-const Home = () => {
+const Timetable = () => {
   return (
-    <>
-      <SideBar title={'Dashboard'}>
+    <SideBar title={'TimeTable'}>
         <div className="bg-primary-white">
           <TimeTable />
         </div>
       </SideBar>
-    </>
   );
 };
 
-export default Home;
+export default Timetable;

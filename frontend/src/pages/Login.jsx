@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -18,6 +20,7 @@ const Login = () => {
       navigate("/");
     } catch (error) {
       console.log(error)
+      toast.error("Invalid credentials");
     }
     finally {
       setLoading(false);
@@ -26,6 +29,7 @@ const Login = () => {
 
   return (
     <div>
+      <ToastContainer />
       <div className="w-[1440px] h-[100vh] bg-white text-primary-50 flex justify-center items-center">
         <div className="w-[400px] h-auto bg-[#d9d9d9] rounded-lg p-6 flex flex-col justify-start">
           {/* Title Section */}

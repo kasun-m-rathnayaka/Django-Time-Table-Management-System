@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, NavigationType, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavigationType,
+  Navigate,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import Users from "./pages/userManagement/Users";
 import Timetable from "./pages/timetable";
@@ -14,22 +20,15 @@ import ProtectedRoute from "./ProtectedRoute";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
-  function logout (){
+  function logout() {
     localStorage.clear();
-    return <Navigate to={'/login'} />;
-  };
+    return <Navigate to={"/login"} />;
+  }
 
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/timetable" element={<Timetable />} />
         <Route path="/assignments" element={<Assignments />} />
@@ -39,7 +38,8 @@ const App = () => {
         <Route path="/add-student" element={<AddStudent />} />
         <Route path="/view-lecturers" element={<ViewLecture />} />
         <Route path="/view-students" element={<ViewStudent />} />
-        <Route path="*" element={<NotFound/>} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/logout" element={logout} />
       </Routes>
     </Router>
   );

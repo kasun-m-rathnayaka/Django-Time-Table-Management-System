@@ -1,10 +1,10 @@
 import React from "react";
+import UserTable from "../../components/UserTable";
 
 const Lecture = () => {
   return (
     <div>
-      <h2>Lecture Dashboard</h2>
-      <p>View timetable, assignments, and manage leaves.</p>
+      <UserTable/>
     </div>
   );
 };
