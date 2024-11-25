@@ -10,7 +10,4 @@ urlpatterns = [
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include('api.urls')),
-    # path('users/', include('users.urls')),
-    # path('timetable/',include('timetable.urls')),
-    # path('manageuser/',include('manageuser.urls')),
 ]
