@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path,include
-from api.views import UserCreate
+from api.views.note_views import UserCreate
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 urlpatterns = [
