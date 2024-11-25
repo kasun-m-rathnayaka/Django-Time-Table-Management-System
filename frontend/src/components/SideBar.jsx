@@ -85,13 +85,12 @@ const styles = {
     justifyContent: "space-between",
   },
   navItem: {
-    margin: "15px 0",
-    fontSize: "0.6rem",
+    margin: "10px 0",
+    fontSize: "0.9rem",
   },
   link: {
     color: "#ecf0f1",
     textDecoration: "none",
-    fontSize: "1.1rem",
     display: "block",
     padding: "10px",
     borderRadius: "5px",

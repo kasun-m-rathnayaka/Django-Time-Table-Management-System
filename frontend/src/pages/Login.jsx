@@ -31,7 +31,7 @@ const Login = () => {
     <div>
       <ToastContainer />
       <div className="w-[1440px] h-[100vh] bg-white text-primary-50 flex justify-center items-center">
-        <div className="w-[400px] h-auto bg-[#d9d9d9] rounded-lg p-6 flex flex-col justify-start">
+        <div className="w-[400px] h-auto bg-[#f7eded] rounded-lg p-6 flex flex-col justify-start">
           {/* Title Section */}
           <h1 className="font-title text-2xl mb-2">Login</h1>
           <p className="text-sm mb-4">Welcome back!</p>
@@ -88,11 +88,11 @@ const Login = () => {
 
           {/* Google & Github Buttons */}
           <div className="mt-4 flex justify-between gap-3">
-            <button className="w-1/2 bg-white text-black py-2 rounded-full flex justify-center items-center gap-2">
+            <button className="w-1/2 bg-white text-black py-2 rounded-md flex justify-center items-center gap-2">
               <i className="fa-brands fa-google"></i>
               Google
             </button>
-            <button className="w-1/2 bg-[#333] text-white py-2 rounded-full flex justify-center items-center gap-2">
+            <button className="w-1/2 bg-[#333] text-white py-2 rounded-md flex justify-center items-center gap-2">
               <i className="fa-brands fa-github"></i>
               GitHub
             </button>

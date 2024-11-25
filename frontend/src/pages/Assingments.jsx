@@ -17,7 +17,7 @@ const Assignments = () => {
       <div id="webcrumbs" className="w-full">
         <div className="p-10 bg-white">
           <h1 className="font-title text-2xl mb-2">
-            Lecture Hall Allocation 
+            Lecturer Allocation 
           </h1>
           <p className="mb-6 text-sm">
             Fill out the form below to request lecture halls and allocate appropriate

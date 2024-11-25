@@ -72,7 +72,7 @@ const data = [
 const TimeTable = () => {
   return (
     <div style={styles.mainContent}>
-      <div className="w-full h-[100vh] bg-white rounded-md shadow-lg p-6">
+      <div className="w-full m-auto h-[100vh] bg-white rounded-md shadow-lg p-6">
         <div className="grid grid-cols-8 gap-2">
           {days.map((day, dayIndex) => (
             <div
