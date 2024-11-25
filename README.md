@@ -38,8 +38,14 @@ A comprehensive course management system built with Django and React, designed t
   - React Router
   - Axios
   - Tailwind CSS
+## Screenshots
+
+![WhatsApp Image 2024-11-25 at 20 16 29_539816ee](https://github.com/user-attachments/assets/491419b5-9aa0-478d-b841-9cc2ef214ed1)
+![WhatsApp Image 2024-11-25 at 20 19 21_9c1b4db4](https://github.com/user-attachments/assets/a38c1c17-6af4-4de0-bd27-20217acfcaa6)
+![image](https://github.com/user-attachments/assets/30c2f966-f309-4e94-be08-45ee605b4297)
 
 ## Installation
+
 
 1. Clone the repository
 ```bash
