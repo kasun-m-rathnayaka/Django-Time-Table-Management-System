@@ -22,10 +22,14 @@ const SideBar = ({ children, title }) => {
               </li>
               <li style={styles.navItem}>
                 <Link to="/users" style={styles.link}>
-                  Users
+                  Users Data
                 </Link>
               </li>
-
+              <li style={styles.navItem}>
+                <Link to="/lecturehall" style={styles.link}>
+                  Lecture Hall
+                </Link>
+              </li>
               <li style={styles.navItem}>
                 <Link to="/lectureleave" style={styles.link}>
                   Leave Form

@@ -1,13 +1,14 @@
 import React from 'react'
+import LectureHall from '../pages/LectureHall';
 
-// Sample user data
-const users = [
-  { name: 'John Doe', email: 'john@example.com', role: 'Admin' },
-  { name: 'Jane Smith', email: 'jane@example.com', role: 'User' },
-  { name: 'Sam Johnson', email: 'sam@example.com', role: 'User' },
+// Sample lecture hall data
+const lectureHalls = [
+  { name: 'Lecture Hall 1', capacity: 100, location: 'Building A' },
+  { name: 'Lecture Hall 2', capacity: 150, location: 'Building B' },
+  { name: 'Lecture Hall 3', capacity: 200, location: 'Building C' },
 ];
 
-const UserTable = () => {
+const LectureHallTable = () => {
   return (
     <div style={styles.mainContent}>
       <div className="w-full h-[100vh] bg-white rounded-md p-6">
@@ -16,21 +17,21 @@ const UserTable = () => {
             Name
           </div>
           <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-md">
-            Email
+            Capacity
           </div>
           <div className="text-center font-title font-semibold p-2 bg-neutral-300 rounded-md">
-            Role
+            Location
           </div>
-          {users.map((user, index) => (
+          {lectureHalls.map((hall, index) => (
             <React.Fragment key={index}>
               <div className="text-center p-2 bg-neutral-100 rounded-md">
-                {user.name}
+                {hall.name}
               </div>
               <div className="text-center p-2 bg-neutral-100 rounded-md">
-                {user.email}
+                {hall.capacity}
               </div>
               <div className="text-center p-2 bg-neutral-100 rounded-md">
-                {user.role}
+                {hall.location}
               </div>
             </React.Fragment>
           ))}
@@ -54,4 +55,4 @@ const styles = {
   },
 };
 
-export default UserTable
+export default LectureHallTable

@@ -1,30 +1,27 @@
 import React, { useState } from "react";
 import SideBar from "../components/SideBar";
 
-const LectureLeave = () => {
+const Assignments = () => {
   const [formData, setFormData] = useState({
     name: "",
     date: "",
-    description: "",
-    duration: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    
-  };
+    console.log(formData);
+  }
 
   return (
     <SideBar title={"Lecture Leave"}>
       <div id="webcrumbs" className="w-full">
         <div className="p-10 bg-white">
           <h1 className="font-title text-2xl mb-2">
-            Lecture Leave Allocation Form
+            Lecture Hall Allocation 
           </h1>
           <p className="mb-6 text-sm">
-            Fill out the form below to request leave and allocate alternate
-            arrangements for your lectures.
+            Fill out the form below to request lecture halls and allocate appropriate
+            arrangements from the time table.
           </p>
           <form className="space-y-6">
             <div className="sm:flex sm:space-x-4">
@@ -115,4 +112,5 @@ const LectureLeave = () => {
     </SideBar>
   );
 };
-export default LectureLeave;
+
+export default Assignments;
